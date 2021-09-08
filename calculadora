@@ -1,0 +1,40 @@
+
+<script>
+    function exibir (texto){
+        document.write(texto);
+    }
+    var operação = prompt("Escolha (+) , (-) , (*)  ou (/)");
+    if (operação == "+"){  operação = 0; }
+    if (operação == "-"){  operação = 1; }
+    if (operação == "*"){  operação = 2; }
+    if (operação == "/"){  operação = 3; }
+
+    if (operação == 0){
+        var primeiro = parseInt(prompt("Qual o primeiro numero? "));
+        var segundo = parseInt(prompt("Qual o segundo numero? "));
+        var resultado = primeiro + segundo ;
+        exibir ( + primeiro + " + " + segundo + " = " + resultado);
+    }
+    if (operação == 1){
+        var primeiro = prompt("Qual o primeiro numero? ");
+        var numero2 = prompt("Qual o segundo numero? ");
+        var resultado = primeiro - segundo;
+        exibir ( + primeiro + " - " + segundo + " = " + resultado);
+    }
+    if (operação == 2){
+        var primeiro = prompt("Qual o primeiro numero? ");
+        var segundo = prompt("Qual o segundo numero?");
+        var resultado = primeiro * segundo;
+        exibir (" A multiplicação entre " +primeiro + " e " + segundo + " é: " + resultado);
+    }    
+    if (opcaoCalculadora == 3){
+        var primeiro = prompt("Qual o primeiro numero?");
+        var segundo = prompt("Qual o segundo numero?");
+        var resultado = primeiro / segundo;
+        exibir (" A divisão entre " + primeiro + " e " + segundo + " é: " + resultado);    
+    }
+    if (operação != 0 && operação != 1 && operação != 2 && operação != 3){ exibir("Null");}
+
+
+
+</script>
